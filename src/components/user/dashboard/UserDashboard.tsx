@@ -1,11 +1,21 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../../context/AuthContext";
 import "../../../assets/styles/UserDashboard.css";
 
+
+
+interface Order {
+  id: number;
+  date: string;
+  total: number;
+  items: number;
+  status: string;
+}
+
 const UserDashboard = () => {
   const { user } = useAuth();
-  const [orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState<Order[]>([] as Order[]);
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("dashboard");
 

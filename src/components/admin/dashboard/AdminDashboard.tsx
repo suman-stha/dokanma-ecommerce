@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, Outlet } from "react-router-dom";
+import  { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../../../assets/styles/AdminDashboard.css";
 import { useAuth } from "../../../context/AuthContext";
 

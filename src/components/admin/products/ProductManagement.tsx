@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../../../context/AuthContext";
-import API from "../../../services/AxiosConfig";
+
 import "../../../assets/styles/AdminDashboard.css";
 
 interface Product {
